@@ -1,3 +1,48 @@
+:root {
+  --frozen: #BBE5ED;
+  --pale-plum: #BFBCCB;
+  --cold-bark: #B399A2;
+  --truffle: #986C6A;
+  --bark: #784F41;
+}
+
 body {
-  background: blanchedalmond;
+  background: var(--bark);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 97vh;
+}
+
+* {
+  border: 1px solid var(--frozen);
+}
+
+.b-and-c {
+  display: flex;
+  flex-grow: 3;
+  flex-direction: column;
+}
+
+.a {
+  flex-grow: .5;
+  background: var(--truffle);
+}
+
+.b {
+  flex-grow: 5;
+  background: var(--cold-bark);
+}
+
+.c {
+  flex-grow: 1;
+  background: var(--pale-plum);
+}
+
+@media (min-width: 600px) {
+  .b-and-c {
+    flex-direction: row;
+  }
 }

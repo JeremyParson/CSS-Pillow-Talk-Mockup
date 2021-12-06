@@ -1,3 +1,61 @@
+:root {
+  --wine: #582C4D;
+  --spice: #A26769;
+  --cream: #D5B9B2;
+  --whip-cream: #ECE2D0;
+  --vanilla: #BFB5AF;
+}
+
 body {
-  background: papayawhip;
+  background: var(--wine);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 97vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.a {
+  flex-grow: .3;
+  background: var(--spice);
+}
+
+.b {
+  flex-grow: 3;
+  background: var(--cream);
+}
+
+.c, .d, .e {
+  flex-grow: 1;
+}
+
+.f {
+  flex-grow: .2;
+  background: var(--vanilla);
+}
+
+.gallery {
+  display: flex;
+  flex-grow: 1;
+  background: var(--whip-cream);
+  justify-content: space-around;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    flex-direction: row;
+  }
 }
