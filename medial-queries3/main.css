@@ -42,7 +42,7 @@ main {
 }
 
 .h {
-  background: var(--kriby);
+  background: var(--kirby);
   flex-grow: 2.5;
 }
 
